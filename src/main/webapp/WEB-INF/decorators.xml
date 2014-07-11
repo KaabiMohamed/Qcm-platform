@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/decorators">
+	<excludes>
+		<pattern>/register</pattern>
+		<pattern>/login</pattern>
+
+	</excludes>
+	<decorator name="admin-layout" page="admin-layout.jsp">
+		<pattern>/backoffice/*</pattern>
+		<pattern>404Error</pattern>
+		<pattern>/backoffice</pattern>
+	</decorator>
+	<decorator name="candidat-layout" page="candidat-layout.jsp">
+		<pattern>/user/*</pattern>
+		<pattern>/user</pattern>
+	</decorator>
+
+</decorators>

@@ -1,0 +1,1 @@
+insert into Administrateur (identifiant, motDePasse) values ('kaabi.med@gmail.com', '1234') 

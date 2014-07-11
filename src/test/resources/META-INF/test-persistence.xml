@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	version="1.0">
+	<persistence-unit name="testPU" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.qcm.platform.entities.Member</class>
+		<class>com.qcm.platform.entities.Administrateur</class>
+		<class>com.qcm.platform.entities.Candidat</class>
+		<class>com.qcm.platform.entities.Examen</class>
+		<class>com.qcm.platform.entities.Member</class>
+		<class>com.qcm.platform.entities.Question</class>
+		<class>com.qcm.platform.entities.Resultats</class>
+		<class>com.qcm.platform.entities.Utilisateur</class>
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
+			<property name="hibernate.show_sql" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
